@@ -77,7 +77,7 @@ public class EditNameActivity extends AppCompatActivity {
             last_name = strings[1];
             provider_id = strings[2];
 
-            String update_name_url = "http://192.168.1.5/LodgeServiceSystem/database/lodge_provider/update_lodge_provider_name.php";
+            String update_name_url = "https://2f766948.ngrok.io/LodgeServiceSystem/database/lodge_provider/update_lodge_provider_name.php";
 
             try {
                 URL url = new URL(update_name_url);

@@ -141,7 +141,7 @@ public class UploadLodgeActivity extends AppCompatActivity implements View.OnCli
         editTextdesc = (EditText) findViewById(R.id.upload_lodge_description);
         editTextloc = (EditText) findViewById(R.id.upload_lodge_location);
         editTextprice = (EditText) findViewById(R.id.upload_lodge_price);
-        editTextid = (EditText) findViewById(R.id.upload_lodge_id);
+//        editTextid = (EditText) findViewById(R.id.upload_lodge_id);
         radioGroup = (RadioGroup) findViewById(R.id.upload_lodge_status);
 //        save.setOnClickListener(this);
 
@@ -419,7 +419,7 @@ public class UploadLodgeActivity extends AppCompatActivity implements View.OnCli
             date = strings[7];
             provider_id = strings[8];
 
-            String create_lodge_url = "http://192.168.1.5/LodgeServiceSystem/database/lodge/create_new_lodge.php";
+            String create_lodge_url = "https://2f766948.ngrok.io/LodgeServiceSystem/database/lodge/create_new_lodge.php";
 
             try {
                 URL url = new URL(create_lodge_url);

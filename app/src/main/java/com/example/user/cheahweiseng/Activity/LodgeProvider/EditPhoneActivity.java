@@ -207,7 +207,7 @@ public class EditPhoneActivity extends AppCompatActivity {
             phone = strings[0];
             provider_id = strings[1];
 
-            String update_email_url = "http://192.168.1.5/LodgeServiceSystem/database/lodge_provider/update_lodge_provider_phone.php";
+            String update_email_url = "https://2f766948.ngrok.io/LodgeServiceSystem/database/lodge_provider/update_lodge_provider_phone.php";
 
             try {
                 URL url = new URL(update_email_url);
