@@ -59,6 +59,7 @@ import java.util.Date;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
     private FirebaseAuth firebaseAuth;
+    private DatabaseReference myRefLodge;
     private TextView profileName;
     private TextView profileEmail;
     private ImageView profileImage;
@@ -102,26 +103,28 @@ public class MainActivity extends AppCompatActivity
         profileEmail = (TextView) header.findViewById(R.id.profileEmail);
         profileImage = (ImageView) header.findViewById(R.id.profileImage);
 
-//        if (firebaseAuth.getCurrentUser() != null) {
-//            mUserDatabase = FirebaseDatabase.getInstance().getReference().child("Lodge Provider").child(firebaseAuth.getCurrentUser().getUid());
-//
-//            mUserDatabase.addListenerForSingleValueEvent(new ValueEventListener() {
-//                @Override
-//                public void onDataChange(DataSnapshot dataSnapshot) {
-//
-//                    final String name = dataSnapshot.child("firstName").getValue().toString() + " " + dataSnapshot.child("lastName").getValue().toString();
-//                    final String email = dataSnapshot.child("email").getValue().toString();
-//
-//                    profileName.setText(name);
-//                    profileEmail.setText(email);
-//                }
-//
-//                @Override
-//                public void onCancelled(DatabaseError databaseError) {
-//
-//                }
-//            });
-//        }
+        if (firebaseAuth.getCurrentUser() != null) {
+            mUserDatabase = FirebaseDatabase.getInstance().getReference().child("Lodge Provider").child(firebaseAuth.getCurrentUser().getUid());
+
+            mUserDatabase.addListenerForSingleValueEvent(new ValueEventListener() {
+                @Override
+                public void onDataChange(DataSnapshot dataSnapshot) {
+
+                    final String name = dataSnapshot.child("firstName").getValue().toString() + " " + dataSnapshot.child("lastName").getValue().toString();
+                    final String email = dataSnapshot.child("email").getValue().toString();
+
+                    profileName.setText(name);
+                    profileEmail.setText(email);
+                }
+
+                @Override
+                public void onCancelled(DatabaseError databaseError) {
+
+                }
+            });
+        }
+
+        myRefLodge = FirebaseDatabase.getInstance().getReference().child("Lodge");
 
         recyclerView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -164,7 +167,7 @@ public class MainActivity extends AppCompatActivity
     }
 
     private void sendToStart() {
-        Intent startIntent = new Intent(MainActivity.this, StartActivity.class);
+        Intent startIntent = new Intent(MainActivity.this, LoginActivity.class);
         startActivity(startIntent);
         finish();
     }
@@ -184,17 +187,17 @@ public class MainActivity extends AppCompatActivity
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.main, menu);
 
-//        // Associate searchable configuration with the SearchView
-//        SearchManager searchManager =
-//                (SearchManager) getSystemService(SEARCH_SERVICE);
-//        SearchView searchView =
-//                (SearchView) menu.findItem(R.id.search).getActionView();
-//        searchView.setSearchableInfo(
-//                searchManager.getSearchableInfo(getComponentName()));
-//        searchView.setFocusable(true);
-////        searchView.setQueryHint("Search Lodge");
-//        searchView.setIconified(false);
-//        searchView.requestFocusFromTouch();
+        // Associate searchable configuration with the SearchView
+        SearchManager searchManager =
+                (SearchManager) getSystemService(SEARCH_SERVICE);
+        SearchView searchView =
+                (SearchView) menu.findItem(R.id.search).getActionView();
+        searchView.setSearchableInfo(
+                searchManager.getSearchableInfo(getComponentName()));
+        searchView.setFocusable(true);
+//        searchView.setQueryHint("Search Lodge");
+        searchView.setIconified(false);
+        searchView.requestFocusFromTouch();
 
         return true;
     }
@@ -206,7 +209,7 @@ public class MainActivity extends AppCompatActivity
                 startActivity(new Intent(this, EditProfileActivity.class));
                 return true;
             case R.id.logOut:
-//                firebaseAuth.signOut();
+                firebaseAuth.signOut();
                 startActivity(new Intent(this, LoginActivity.class));
                 return true;
             default:
