@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_lodge_provider"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="Lodge Providers" />
+        <item
+            android:id="@+id/nav_chat"
+            android:icon="@drawable/ic_chat_black_24dp"
+            android:title="Chat List" />
+        <item
+            android:id="@+id/nav_history_upload"
+            android:icon="@drawable/ic_history_black_24dp"
+            android:title="History" />
+    </group>
+
+    <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_info_black_24dp"
+                android:title="About" />
+            <item
+                android:id="@+id/nav_logout"
+                android:title="Logout" />
+    </group>
+
+</menu>

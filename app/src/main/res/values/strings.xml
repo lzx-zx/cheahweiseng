@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Lodge Service Application</string>
+    <string name="title_activity_register_activity">Register_activity</string>
+    <string name="title_activity_main_page">MainPage</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="Log_Out">Log Out</string>
+    <string name="Edit_Profile">Edit Profile</string>
+    <string name="search">SEARCH</string>
+    <string name="Subscribe">Subscribe</string>
+    <string name="title_activity_history_upload">HistoryUpload</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="action_example">Example action</string>
+    <string name="title">String</string>
+    <string name="description">TextView</string>
+    <string name="location">String</string>
+    <string name="radiocondition">String</string>
+    <string name="update_lodge">Button</string>
+    <string name="price">String</string>
+
+    <string name="simple_direction">Simple Direction</string>
+    <string name="transit_direction">Transit Direction</string>
+    <string name="alternative_direction">Alternative Direction</string>
+    <string name="waypoints_direction">Waypoints Direction</string>
+    <string name="request_direction">Request Direction</string>
+
+    <string name="search_hint">Search Lodge</string>
+
+</resources>

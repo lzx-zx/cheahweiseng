@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.cheahweiseng.Activity.Lodge.LodgeDetailActivity">
+
+    <RelativeLayout
+        android:id="@+id/lodge_history_detail_image_layout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/lodge_history_detail_image"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp" />
+
+        <ProgressBar
+            android:id="@+id/lodge_history_detail_image_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="80dp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/lodge_history_detail_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lodge_history_detail_image_layout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Lodge Title"
+        android:textColor="@color/Blue"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lodge_history_detail_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lodge_history_detail_title"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:text="Lodge Price" />
+
+    <TextView
+        android:id="@+id/lodge_history_detail_description"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/lodge_history_detail_price"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:text="Lodge Description" />
+
+    <TextView
+        android:id="@+id/lodge_history_detail_lodge_provider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lodge_history_detail_description"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Lodge Provider" />
+
+    <TextView
+        android:id="@+id/lodge_history_detail_added_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lodge_history_detail_lodge_provider"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Lodge Added Date" />
+
+    <TextView
+        android:id="@+id/lodge_history_detail_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lodge_history_detail_added_date"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Lodge Status" />
+</RelativeLayout>

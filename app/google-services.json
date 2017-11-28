@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1036092229096",
+    "firebase_url": "https://cheahweiseng-65315.firebaseio.com",
+    "project_id": "cheahweiseng-65315",
+    "storage_bucket": "cheahweiseng-65315.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1036092229096:android:8e3020da0f753fa9",
+        "android_client_info": {
+          "package_name": "com.example.user.cheahweiseng"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1036092229096-p1tp4driph05iv2hh9ff0mocm68hap20.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.user.cheahweiseng",
+            "certificate_hash": "cd21e7bf2d305d87463da5e659591c15efae7ac5"
+          }
+        },
+        {
+          "client_id": "1036092229096-mp9cvkjs4i335eerkfggi31d3sgpdp51.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxARbChpM_mTIaabRnaOByy4MvpXYxh3k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1036092229096-mp9cvkjs4i335eerkfggi31d3sgpdp51.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.cheahweiseng.Activity.LodgeProvider.EditPhoneActivity">
+
+    <TextView
+        android:id="@+id/edit_phone_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:text="Edit Phone"
+        android:textColor="@color/Blue"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="10dp" />
+
+    <EditText
+        android:id="@+id/edit_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:hint="Phone Number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_phone_title" />
+
+    <EditText
+        android:id="@+id/edit_phone_verification_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:hint="Verification Code"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_phone_number" />
+
+    <Button
+        android:id="@+id/edit_phone_btn_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="SEND"
+        app:layout_constraintEnd_toStartOf="@+id/edit_phone_btn_update"
+        app:layout_constraintTop_toBottomOf="@+id/edit_phone_verification_code"
+        android:layout_marginRight="10dp" />
+
+    <Button
+        android:id="@+id/edit_phone_btn_resend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="RESEND"
+        app:layout_constraintEnd_toStartOf="@+id/edit_phone_btn_update"
+        app:layout_constraintTop_toBottomOf="@+id/edit_phone_verification_code"
+        android:layout_marginRight="10dp" />
+
+    <Button
+        android:id="@+id/edit_phone_btn_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="UPDATE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_phone_verification_code"
+        android:layout_marginRight="10dp" />
+
+    <Button
+        android:id="@+id/edit_phone_btn_verify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="VERIFY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_phone_verification_code"
+        android:layout_marginRight="10dp" />
+</android.support.constraint.ConstraintLayout>

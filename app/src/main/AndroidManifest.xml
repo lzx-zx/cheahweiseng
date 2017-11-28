@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.user.cheahweiseng">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MEDIA_CONTENT_CONTROL" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-feature
+        android:name="android.hardware.camera2"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.Camera"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Lodge Service Application"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <service android:name="org.eclipse.paho.android.service.MqttService" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCLGnRxgJpCL5I4nhPD3BEFmQVSXgXD3yw" />
+
+        <activity
+            android:name=".Activity.RegisterActivity"
+            android:label="Lodge Service Application"
+            android:parentActivityName=".Activity.LoginActivity" />
+        <activity android:name=".Activity.LoginActivity" />
+        <activity
+            android:name=".Activity.Reset_Password"
+            android:label="Lodge Service Application"
+            android:parentActivityName=".Activity.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.MainActivity"
+            android:label="Lodge Service Application"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name=".Activity.LodgeProvider.EditProfileActivity"
+            android:parentActivityName=".Activity.MainActivity" />
+        <activity
+            android:name=".Activity.Lodge.UploadLodgeActivity"
+            android:parentActivityName=".Activity.MainActivity" />
+        <activity
+            android:name=".Activity.Lodge.HistoryUploadActivity"
+            android:parentActivityName=".Activity.MainActivity" />
+        <activity
+            android:name=".Activity.Lodge.LodgeHistoryDetailActivity"
+            android:parentActivityName=".Activity.Lodge.HistoryUploadActivity" />
+        <activity android:name=".Activity.Lodge.UpdateLodgeActivity" />
+        <activity
+            android:name=".Activity.Lodge.LodgeDetailActivity"
+            android:parentActivityName=".Activity.MainActivity" />
+        <activity
+            android:name=".Activity.Lodge.MapsActivity"
+            android:label="Map" />
+        <activity android:name=".Activity.Lodge.SearchResultActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.LodgeProvider.LodgeProviderActivity"
+            android:parentActivityName=".Activity.MainActivity" />
+        <activity
+            android:name=".Activity.Chat.ChatActivity"
+            android:parentActivityName=".Activity.Chat.ChatListActivity" />
+        <activity
+            android:name=".Activity.Chat.ChatListActivity"
+            android:parentActivityName=".Activity.MainActivity" />
+        <activity
+            android:name=".Activity.LodgeProvider.LodgeProviderProfileActivity"
+            android:parentActivityName=".Activity.LodgeProvider.LodgeProviderActivity" />
+        <activity
+            android:name=".Activity.LodgeProvider.EditNameActivity"
+            android:parentActivityName=".Activity.LodgeProvider.EditProfileActivity" />
+        <activity
+            android:name=".Activity.LodgeProvider.EditICActivity"
+            android:parentActivityName=".Activity.LodgeProvider.EditProfileActivity" />
+        <activity
+            android:name=".Activity.LodgeProvider.EditEmailActivity"
+            android:parentActivityName=".Activity.LodgeProvider.EditProfileActivity" />
+        <activity
+            android:name=".Activity.LodgeProvider.EditPhoneActivity"
+            android:parentActivityName=".Activity.LodgeProvider.EditProfileActivity" />
+        <activity
+            android:name=".Activity.SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.StartActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Activity.AboutActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.user.cheahweiseng.Activity.LoginActivity">
+
+
+    <TextView
+        android:text="Not have an account? Signup Here"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/register"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="94dp" />
+
+    <Button
+        android:text="Log In"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSignIn"
+        android:layout_above="@+id/register"
+        android:layout_alignRight="@+id/register"
+        android:layout_alignEnd="@+id/register"
+        android:layout_alignLeft="@+id/register"
+        android:layout_alignStart="@+id/register" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/reg_password"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:layout_marginBottom="65dp"
+        android:layout_above="@+id/btnSignIn"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/reg_email"
+        android:hint="Enter Your Email Here"
+        android:layout_above="@+id/reg_password"
+        android:layout_marginBottom="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="User Login"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textAlignment="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/reg_email"
+        android:layout_marginBottom="52dp"
+        android:id="@+id/textView2"
+        android:layout_alignRight="@+id/reg_email"
+        android:layout_alignEnd="@+id/reg_email"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/resetpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/register"
+        android:layout_alignStart="@+id/register"
+        android:layout_below="@+id/btnSignIn"
+        android:layout_marginTop="27dp"
+        android:text="Forget Password?"
+        android:layout_alignRight="@+id/register"
+        android:layout_alignEnd="@+id/register" />
+</RelativeLayout>

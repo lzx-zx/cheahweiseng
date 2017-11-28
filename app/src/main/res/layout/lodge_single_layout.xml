@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/image_layout"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp">
+    <ImageView
+        android:id="@+id/lodge_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+        <ProgressBar
+            android:id="@+id/lodge_image_progress"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:layout_alignTop="@+id/lodge_image" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/lodge_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/image_layout"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/image_layout"
+        android:text="Lodge Title"
+        android:textColor="@color/Black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lodge_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lodge_title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/image_layout"
+        android:text="Lodge Price"
+        android:textColor="@color/Red"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/lodge_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lodge_price"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/image_layout"
+        android:text="Lodge Description" />
+</RelativeLayout>

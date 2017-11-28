@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.user.cheahweiseng.Activity.StartActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Welcome to Lodging Service System"
+        android:textAlignment="center"
+        android:textColor="@color/White"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/start_user_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/start_provider_btn"
+        android:layout_alignLeft="@id/start_provider_btn"
+        android:layout_alignRight="@id/start_provider_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/LightGrey"
+        android:text="Login AS User"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <Button
+        android:id="@+id/start_provider_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="48dp"
+        android:backgroundTint="@color/White"
+        android:text="Login As Lodge Provider"
+        android:textColor="@color/colorPrimary" />
+</RelativeLayout>

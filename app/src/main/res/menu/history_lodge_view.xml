@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.lodgeProvider.cheahweiseng.HistoryUpload">
+    <item
+        android:id="@+id/edit_lodge"
+        android:icon="@drawable/ic_edit_black_24dp"
+        android:title="EDIT LODGE"
+        app:showAsAction="ifRoom" />
+</menu>
