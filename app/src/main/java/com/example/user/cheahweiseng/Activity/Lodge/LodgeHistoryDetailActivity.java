@@ -111,7 +111,7 @@ public class LodgeHistoryDetailActivity extends AppCompatActivity {
             lodge_id = strings[0];
             provider_id = strings[1];
 
-            String lodge_detail_url = "https://2f766948.ngrok.io/LodgeServiceSystem/database/lodge/display_lodge_detail.php";
+            String lodge_detail_url = "http://192.168.43.151/LodgeServiceSystem/database/lodge/display_lodge_detail.php";
             try {
                 URL url = new URL(lodge_detail_url);
                 HttpURLConnection connection = (HttpURLConnection) url.openConnection();
@@ -233,7 +233,7 @@ public class LodgeHistoryDetailActivity extends AppCompatActivity {
         protected String doInBackground(String... strings) {
 
             provider_id = strings[0];
-            String profile_url = "http://192.168.1.5/LodgeServiceSystem/database/lodge_provider/retrieve_lodge_provider_details.php";
+            String profile_url = "http://192.168.43.151/LodgeServiceSystem/database/lodge_provider/retrieve_lodge_provider_details.php";
 
             try {
                 URL url = new URL(profile_url);

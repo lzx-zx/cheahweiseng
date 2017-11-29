@@ -377,7 +377,7 @@ public class UpdateLodgeActivity extends AppCompatActivity implements View.OnCli
 
             lodge_id = strings[0];
 
-            String lodge_detail_url = "https://2f766948.ngrok.io/LodgeServiceSystem/database/lodge/display_lodge_detail_by_id.php";
+            String lodge_detail_url = "http://192.168.43.151/LodgeServiceSystem/database/lodge/display_lodge_detail_by_id.php";
             try {
                 URL url = new URL(lodge_detail_url);
                 HttpURLConnection connection = (HttpURLConnection) url.openConnection();
@@ -490,7 +490,7 @@ public class UpdateLodgeActivity extends AppCompatActivity implements View.OnCli
             price = strings[4];
             image = strings[5];
             lodge_id = strings[6];
-            String profile_url = "http://192.168.1.5/LodgeServiceSystem/database/lodge/update_lodge_details.php";
+            String profile_url = "http://192.168.43.151/LodgeServiceSystem/database/lodge/update_lodge_details.php";
 
             try {
                 URL url = new URL(profile_url);

@@ -264,7 +264,7 @@ public class MainActivity extends AppCompatActivity
 
         @Override
         protected String doInBackground(String... strings) {
-            String all_lodge_url = "https://2f766948.ngrok.io/LodgeServiceSystem/database/lodge/display_all_lodge.php";
+            String all_lodge_url = "http://192.168.43.151/LodgeServiceSystem/database/lodge/display_all_lodge.php";
 
             try {
                 URL url = new URL(all_lodge_url);

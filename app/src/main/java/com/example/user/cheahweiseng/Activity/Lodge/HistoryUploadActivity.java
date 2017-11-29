@@ -103,7 +103,7 @@ public class HistoryUploadActivity extends AppCompatActivity {
         protected String doInBackground(String... strings) {
 
             provider_id = strings[0];
-            String history_url = "https://2f766948.ngrok.io/LodgeServiceSystem/database/lodge/display_history_lodge.php";
+            String history_url = "http://192.168.43.151/LodgeServiceSystem/database/lodge/display_history_lodge.php";
 
             try {
                 URL url = new URL(history_url);

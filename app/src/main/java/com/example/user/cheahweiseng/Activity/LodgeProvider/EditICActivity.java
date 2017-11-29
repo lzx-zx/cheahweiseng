@@ -73,7 +73,7 @@ public class EditICActivity extends AppCompatActivity {
             ic = strings[0];
             provider_id = strings[1];
 
-            String update_ic_url = "https://2f766948.ngrok.io/LodgeServiceSystem/database/lodge_provider/update_lodge_provider_ic.php";
+            String update_ic_url = "http://192.168.43.151/LodgeServiceSystem/database/lodge_provider/update_lodge_provider_ic.php";
 
             try {
                 URL url = new URL(update_ic_url);

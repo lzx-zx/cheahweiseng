@@ -86,7 +86,7 @@ public class EditEmailActivity extends AppCompatActivity {
             email = strings[0];
             provider_id = strings[1];
 
-            String update_email_url = "https://2f766948.ngrok.io/LodgeServiceSystem/database/lodge_provider/update_lodge_provider_email.php";
+            String update_email_url = "http://192.168.43.151/LodgeServiceSystem/database/lodge_provider/update_lodge_provider_email.php";
 
             try {
                 URL url = new URL(update_email_url);

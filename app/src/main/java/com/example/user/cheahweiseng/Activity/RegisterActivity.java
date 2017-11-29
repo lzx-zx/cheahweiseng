@@ -161,7 +161,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
             lastName = strings[2];
             email = strings[3];
             password = strings[4];
-            String register_url = "https://2f766948.ngrok.io/LodgeServiceSystem/database/lodge_provider/register.php";
+            String register_url = "http://192.168.43.151/LodgeServiceSystem/database/lodge_provider/register.php";
 
             try {
                 URL url = new URL(register_url);

@@ -104,7 +104,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
             email = strings[0];
             password = strings[1];
-            String login_url = "https://2f766948.ngrok.io/LodgeServiceSystem/database/lodge_provider/login.php";
+            String login_url = "http://192.168.43.151/LodgeServiceSystem/database/lodge_provider/login.php";
             try {
 
                 URL url = new URL(login_url);

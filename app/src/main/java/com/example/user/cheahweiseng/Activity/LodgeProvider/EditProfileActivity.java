@@ -135,7 +135,7 @@ public class EditProfileActivity extends AppCompatActivity {
         protected String doInBackground(String... strings) {
 
             provider_id = strings[0];
-            String profile_url = "https://2f766948.ngrok.io/LodgeServiceSystem/database/lodge_provider/retrieve_lodge_provider_details.php";
+            String profile_url = "http://192.168.1.5/LodgeServiceSystem/database/lodge_provider/retrieve_lodge_provider_details.php";
 
             try {
                 URL url = new URL(profile_url);
